@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="XOC BIOS & tuning GPU : limites de puissance, courbes, stabilité, tests et validation." />
   <meta name="author" content="Romain Beaumont" />
-  <title>XOC BIOS — Tuning GPU & Validation</title>
+  <title>Romain BEAUMONT - Optimisation GPU</title>
 
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="stylesheet" href="../css/style.css" />
@@ -39,10 +39,10 @@
         <span>/</span>
         <a href="../projets.html">Projets</a>
         <span>/</span>
-        <span>XOC BIOS</span>
+        <span>Optimisation GPU</span>
       </nav>
 
-      <h1 class="article-title">XOC BIOS — Tuning GPU</h1>
+      <h1 class="article-title">XOC BIOS GTX 1080 ou L'optimisation des performances d'un GPU</h1>
 
       <p class="article-subtitle">
         Travail autour des profils GPU : limites de puissance, courbes de fréquence/tension,
@@ -54,8 +54,8 @@
         <span class="pill">BIOS</span>
         <span class="pill">Power Limit</span>
         <span class="pill">Stabilité</span>
-        <span class="pill">Tests</span>
-        <span class="pill">2025–2026</span>
+        <span class="pill">Monitoring</span>
+        <span class="pill">2024–2025</span>
       </div>
 
       <div class="article-sep"></div>
@@ -70,20 +70,21 @@
 
       <section class="article-section">
         <h2 class="section-title">Méthode</h2>
-        <ul class="article-list">
-          <li>Réglages progressifs : power limit, voltage, fréquence core/memory.</li>
+        <ul class="article-text">
+          <li>Flashage BIOS : vérification de la compatibilité et flashage avec nvflash.</li>
+		  <li>Réglages progressifs : power limit, voltage, fréquence core/memory sur msi afterburner.</li>
           <li>Monitoring : température, throttling, consommation, erreurs.</li>
-          <li>Tests : charge longue, bench répétables, validation sur jeux/applications.</li>
-          <li>Objectif : profil stable + gain réel, pas juste un pic de fréquence.</li>
+          <li>Tests : charge longue, benchmarks, validation sur jeux/applications.</li>
+
         </ul>
       </section>
 
       <section class="article-section">
         <h2 class="section-title">Résultats</h2>
-        <ul class="article-list">
-          <li>Profils “daily” stables et documentés.</li>
+        <ul class="article-text">
+          <li>Profils “daily” stables et plus performants.</li>
           <li>Compréhension des limites (temp / power / VRM).</li>
-          <li>Réglages réutilisables selon les besoins (silence, perf, efficacité).</li>
+          <li>Réglages utilisables selon les besoins (silence, perf, efficacité).</li>
         </ul>
       </section>
 
@@ -95,75 +96,6 @@
 
     </div>
   </section>
-
-<footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Colonne 1 : À propos -->
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <div class="logo-text">RB</div>
-                        <span>Romain Beaumont</span>
-                    </div>
-                    <p class="footer-description">
-                        Passionné par les technologies et l'accompagnement des utilisateurs, je recherche un poste en CDI dans le support informatique. 
-                    </p>
-                    
-                </div>
-                
-                <!-- Colonne 2 : Navigation rapide -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Navigation</h3>
-                    <ul class="footer-links">
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Colonne 3 : Projets -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Projets phares</h3>
-                    <ul class="footer-links">
-                        <li><a href="projets.html">Environnement GNU / Linux</a></li>
-                        <li><a href="projets.html">Modifications BIOS</a></li>
-                        <li><a href="projets.html">Licence Radio Amateur</a></li>
-                        <li><a href="projets.html">Voir tous les projets</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Colonne 4 : Contact -->
-                <div class="footer-col">
-                    <h3 class="footer-title">Contact rapide</h3>
-                    <ul class="footer-contact">
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <a href="mailto:romainbeaumont21@gmail.com">romainbeaumont21@gmail.com</a>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>Amiens, Reims</span>
-							
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
-                            <span>Disponible immédiatement</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
