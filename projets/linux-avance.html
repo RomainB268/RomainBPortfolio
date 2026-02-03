@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Environnement GNU/Linux personnalisé : Gentoo / Arch, optimisation système, automatisation, hardening et maintenance." />
+  <meta name="author" content="Romain Beaumont" />
+  <title>Romain BEAUMONT - Environnement GNU / Linux</title>
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+  <style>
+    .page-article { padding: 70px 0; }
+    .article-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .article-title { font-size: clamp(34px, 4vw, 52px); line-height: 1.05; margin: 0 0 10px; }
+    .article-subtitle { max-width: 860px; opacity: .9; line-height: 1.7; margin: 0 0 22px; }
+    .article-sep { height: 1px; width: 100%; opacity: .25; margin: 26px 0 30px; }
+    .article-meta { display: flex; flex-wrap: wrap; gap: 10px; opacity: .85; margin: 10px 0 0; }
+    .pill { display: inline-flex; align-items: center; padding: 7px 11px; border-radius: 999px; font-size: 12px; letter-spacing: .04em; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.04); }
+    .article-section { margin: 26px 0; max-width: 900px; }
+    .section-title { font-size: 18px; letter-spacing: .08em; text-transform: uppercase; opacity: .9; margin: 0 0 10px; }
+    .article-text { line-height: 1.85; opacity: .92; margin: 0; }
+    .article-list { margin: 12px 0 0; padding-left: 18px; line-height: 1.85; opacity: .92; }
+    .article-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 16px; border-radius: 12px; text-decoration: none; border: 1px solid rgba(255,255,255,.18); }
+    .btn-primary { background: rgba(255,255,255,.10); }
+    .btn-outline { background: transparent; }
+  </style>
+</head>
+
+<body>
+
+  <section class="page-article">
+    <div class="article-wrap">
+
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="../projets.html">Projets</a>
+        <span>/</span>
+        <span>GNU Linux</span>
+      </nav>
+
+      <h1 class="article-title">Environnement GNU/Linux personnalisé</h1>
+
+      <p class="article-subtitle">
+        Configuration complète d’un environnement <strong>Gentoo / Arch</strong> :
+      </p>
+
+      <div class="article-meta" aria-label="Mots-clés">
+        <span class="pill">GNU/Linux</span>
+        <span class="pill">Systèmes</span>
+        <span class="pill">Bash</span>
+        <span class="pill">Hardening</span>
+        <span class="pill">2019–2025</span>
+        <span class="pill">Niveau avancé</span>
+      </div>
+
+      <div class="article-sep"></div>
+
+      <section class="article-section">
+        <h2 class="section-title">Contexte</h2>
+        <p class="article-text">
+          Pour gagner en stabilité, en performance et sécurité sur mes machines (ThinkPad / Desktop),
+          j’ai construit un environnement Linux “sur-mesure” : installation propre, configuration,
+          optimisation pour une utilisation au quotidien.
+        </p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Objectifs</h2>
+        <ul class="article-text">
+          <li>Réduire la charge inutile (services, démarrage, bruit système) tout en gardant une base fiable.</li>
+          <li>Automatiser les tâches récurrentes (updates, sauvegardes, nettoyage, monitoring, logs).</li>
+          <li>Appliquer un hardening pragmatique (exposition réseau minimale, pare feu configuré, compartimentation de chaque processus, compilation de linux hardened et chiffrement LUKS).</li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Résultats</h2>
+        <ul class="article-text">
+          <li>Environnement cohérent et stable, avec un process d’entretien plus simple.</li>
+          <li>Gain de confort et de vitesse au quotidien.</li>
+          <li>Base durcie (surface d’attaque réduite) sans sacrifier l’usage.</li>
+        </ul>
+      </section>
+
+      <div class="article-sep"></div>
+
+      <div class="article-cta">
+        <a class="btn btn-outline" href="../projets.html">← Retour aux projets</a>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Colonne 1 : À propos -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-text">RB</div>
+                        <span>Romain Beaumont</span>
+                    </div>
+                    <p class="footer-description">
+                        Passionné par les technologies et l'accompagnement des utilisateurs, je recherche un poste en CDI dans le support informatique. 
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/romain-beaumont-b7a4a3340/" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/romainbmtl" target="_blank" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:romainbeaumont21@gmail.com" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Colonne 2 : Navigation rapide -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 3 : Projets -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Projets phares</h3>
+                    <ul class="footer-links">
+                        <li><a href="projets.html">Environnement GNU / Linux</a></li>
+                        <li><a href="projets.html">Modifications BIOS</a></li>
+                        <li><a href="projets.html">Licence Radio Amateur</a></li>
+                        <li><a href="projets.html">Voir tous les projets</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 4 : Contact -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact rapide</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:romainbeaumont21@gmail.com">romainbeaumont21@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Amiens, Reims</span>
+							
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Disponible immédiatement</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
